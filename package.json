@@ -1,0 +1,35 @@
+{
+  "name": "quick",
+  "version": "1.0.0",
+  "description": "movies app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi-neron/quick-movies.git"
+  },
+  "author": "JoseSanchez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hi-neron/quick-movies/issues"
+  },
+  "homepage": "https://github.com/hi-neron/quick-movies#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "yo-yo": "^1.4.1"
+  }
+}

@@ -1,0 +1,15 @@
+// Guias
+@import "./guidelines/fonts";
+@import "./guidelines/colors";
+@import "./guidelines/normalize";
+
+// Componentes
+@import "./parts/header";
+@import "./parts/cards";
+
+
+body {
+  font-family: 'Lora';
+  font-weight: 400;
+  background-color: $red_5
+}

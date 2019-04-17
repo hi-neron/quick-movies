@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <header class="header-container">
+      <div class="header-form">
+        <div class="header-search">
+          <input type="text" id="search-title" name="search-title">
+        </div>
+        <div class="header-type">
+          <div class="header-radio-wrapper">
+            <input class="header-type-input" type="radio" value="movie" name="type" id="movies" checked="checked">
+            <label class="header-type-label" for="movies">Movies</label>
+          </div>
+          <div class="header-radio-wrapper">
+            <input class="header-type-input" type="radio" value="series" name="type" id="series">
+            <label class="header-type-label" for="series">Series</label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="cards-container">
+    </section>
+    <article id="modal-single-movie"></article>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

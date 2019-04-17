@@ -1,0 +1,11 @@
+#cards-container {
+  .cards-message {
+  }
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: space-around;
+  }
+}
