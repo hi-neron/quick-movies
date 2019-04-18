@@ -1,11 +1,93 @@
 #cards-container {
   .cards-message {
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 1.4em;
+    color: $color_5;
+    background-color: $color_1;
+    padding: 0.1em;
   }
   .cards-wrapper {
+    margin-top: 3.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     justify-content: space-around;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    .article-card {
+      width: 100%;
+      min-height: 300px;
+      margin-top: 3em;
+
+      .article-wrapper {
+        position: relative;
+        text-align: center;
+
+        .article-loader {
+          height: 300px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: -1;
+
+          .article-message-alert {
+            font-family: 'Rubik';
+            color: $color_2;
+            font-size: 0.9em;
+          }
+
+        }
+
+        .article-content {
+          display: inline-block;
+          max-width: 300px;
+          .article-top {
+            display: flex;
+            justify-content: center;
+            img {
+              box-shadow: 0 0 2px 2px rgba($color_1, 0.1);
+              border-radius: 2px;
+            }
+          }
+          .article-bottom {
+            margin-top: 1em;
+            text-align: center;
+
+            .article-bottom-title {
+              margin: 0.3em 0em;
+              font-family: 'Domine';
+              font-weight: 700;
+              font-size: 1.6em;
+              line-height: 1.2em;
+            }
+            .article-bottom-date {
+              font-family: 'Rubik';
+              font-size: 1.1em;
+
+              &:after {
+                content: "";
+                display: block;
+                border-bottom: 1px solid $color_1;
+                width: 10px;
+                margin: 0 auto;
+                padding-top: 0.4em;
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
+}
+
+.cards-full {
+  padding-top: 150px;
 }

@@ -30,6 +30,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "infinite-scroll": "^3.0.5",
     "yo-yo": "^1.4.1"
   }
 }

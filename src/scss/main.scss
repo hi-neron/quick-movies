@@ -6,10 +6,10 @@
 // Componentes
 @import "./parts/header";
 @import "./parts/cards";
-
+@import "./parts/modal";
 
 body {
   font-family: 'Lora';
   font-weight: 400;
-  background-color: $red_5
+  background-color: $color_5;
 }

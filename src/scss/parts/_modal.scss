@@ -1,0 +1,20 @@
+#modal-single-movie {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 12;
+  background-color: rgba($color_1, 0.95);
+  color: $color_5;
+  justify-content: center;
+  align-items: center;
+  cursor: sw-resize;
+
+}
+
+.modal-show {
+  display: flex !important;
+}
+

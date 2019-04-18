@@ -1,32 +1,48 @@
-.header-container {
+#header-container {
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: $color_2;
+  transition: 0.5s height cubic-bezier(0.39, 0.575, 0.565, 1);
 
   .header-form {
     text-align: center;
+
     .header-search {
       input[type="text"] {
         background-color: transparent;
         display: inline-block;
         border: none;
         appearance: none;
-        border-bottom: 2px solid $red_1;
+        border-bottom: 2px solid $color_1;
         margin-bottom: 0.5em;
         font-size: 4em;
         text-align: center;
+        color: $color_5;
         &:focus {
           outline: none;
+        }
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $color_5;
+          opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $color_5;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: $color_5;
         }
 
       }
     }
     .header-type {
       .header-type-input:checked ~ .header-type-label {
-        background-color: $red_3;
-        color: $red_5;
+        background-color: $color_1;
+        color: $color_5;
       }
 
       .header-radio-wrapper {
@@ -43,10 +59,40 @@
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 0.1em;
-        color: $red_1;
+        color: $color_1;
         cursor: pointer;
         font-size: 2em;
       }
+    }
+  }
+}
+
+.header-small {
+  height: 152px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &:before {
+    content: '';
+    width: 100%;
+    background-color: $color_2;
+    position: absolute;
+    height: 200px;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+
+  }
+
+  .header-form {
+    .header-search {
+      display: inline-block;
+    }
+    .header-type {
+      display: inline-block;
+
     }
   }
 }

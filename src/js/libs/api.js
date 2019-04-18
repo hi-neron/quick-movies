@@ -18,16 +18,16 @@ let drawContent = require('./drawContent')
 
 let API = {
   key: 'f7221401',
-  get_movies: function (searchString, type, cb) {
+  get_movies: function (searchString, type, page, cb) {
     searchString = encodeURI(searchString)
-    let request = `http://www.omdbapi.com/?apikey=${this.key}&s=${searchString}&type=${type}`
+    let request = `http://www.omdbapi.com/?apikey=${this.key}&s=${searchString}&type=${type}&page=${page}`
     
     fetch(request)
     .then(function(response) {
       return response.json()
     })
     .then(function(json) {
-      drawContent(json, type)
+      cb(json)
     })
     .catch((e) => {
       console.log(e)

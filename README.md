@@ -1,4 +1,8 @@
-# Quick-movies API = "obmdAPI"
+# Quick-movies
+-----
+> API = "obmdAPI"
 
-> Start:
-- **gulp**
+## Setup
+- **clone**
+- npm install
+- **gulp** ()
