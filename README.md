@@ -5,4 +5,4 @@
 ## Setup
 - **clone**
 - npm install
-- **gulp** ()
+- **gulp** (Debe tener instalado gulp de forma global. El script crea un servidor local)
